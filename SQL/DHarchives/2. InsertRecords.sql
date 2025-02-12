@@ -163,6 +163,12 @@ INSERT INTO Researchers (Name, Affiliation, Email) VALUES
 ('Dr. Lauren Martinez', 'Harvard University', 'lmartinez@harvard.edu'),
 ('Dr. Paul Anderson', 'Stanford University', 'panderson@stanford.edu');
 
+INSERT INTO Researcher_Artifacts (ResearcherID, ArtifactID) VALUES
+(1, 3), (2, 5), (3, 7), (4, 2), (5, 8),
+(6, 10), (7, 12), (8, 1), (9, 4), (10, 6),
+(11, 14), (12, 16), (13, 18), (14, 20), (15, 9),
+(16, 11), (17, 13), (18, 15), (19, 17), (20, 19);
+
 INSERT INTO Researcher_Texts (ResearcherID, TextID) VALUES
 (1, 2), (2, 4), (3, 6), (4, 8), (5, 10),
 (6, 12), (7, 14), (8, 16), (9, 18), (10, 20),
