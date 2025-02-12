@@ -1,4 +1,3 @@
--- Sample INSERT statements for each table
 INSERT INTO Institutions (Name, Location, Type) VALUES 
 ('National Museum of Art', 'New York, USA', 'Museum'),
 ('British Library', 'London, UK', 'Library'),
