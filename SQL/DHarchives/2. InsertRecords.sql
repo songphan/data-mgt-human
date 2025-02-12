@@ -109,6 +109,10 @@ INSERT INTO Public_Engagements (ExhibitionID, VisitorCount, Feedback) VALUES
 (14, 7700, 'Renaissance sculptures were awe-inspiring.'),
 (15, 6400, 'Enlightenment literature was fascinating.'),
 (1, 5100, 'Loved the interactive elements in Ancient Rome Rediscovered.'),
+(2, 6900, 'The artistic elements of the Florentine Renaissance were breathtaking.'),
+(3, 6700, 'The preservation of Egyptian artifacts was commendable.'),
+(4, 7400, 'Great storytelling through Asian artifacts.'),
+(5, 6800, 'Enjoyed the historical insights into the Islamic Golden Age.');
 
 INSERT INTO Researchers (Name, Affiliation, Email) VALUES 
 ('Dr. Anna Lee', 'Harvard University', 'alee@harvard.edu'),
@@ -159,8 +163,3 @@ INSERT INTO Researchers (Name, Affiliation, Email) VALUES
 ('Dr. Andrew Campbell', 'University of Oxford', 'acampbell@ox.ac.uk'),
 ('Dr. Lauren Martinez', 'Harvard University', 'lmartinez@harvard.edu'),
 ('Dr. Paul Anderson', 'Stanford University', 'panderson@stanford.edu');
-
-(2, 6900, 'The artistic elements of the Florentine Renaissance were breathtaking.'),
-(3, 6700, 'The preservation of Egyptian artifacts was commendable.'),
-(4, 7400, 'Great storytelling through Asian artifacts.'),
-(5, 6800, 'Enjoyed the historical insights into the Islamic Golden Age.');
