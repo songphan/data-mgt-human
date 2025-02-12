@@ -1,3 +1,7 @@
+-- Create the Digital Humanities Archive Database
+CREATE DATABASE DigitalHumanitiesArchive;
+USE DigitalHumanitiesArchive;
+
 -- Table: Institutions (Must be created first for FK reference)
 CREATE TABLE Institutions (
     InstitutionID INT PRIMARY KEY AUTO_INCREMENT,
