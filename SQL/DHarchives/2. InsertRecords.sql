@@ -172,8 +172,8 @@ INSERT INTO Researcher_Artifacts (ResearcherID, ArtifactID) VALUES
 INSERT INTO Researcher_Texts (ResearcherID, TextID) VALUES
 (1, 1), (2, 2), (3, 3), (4, 4), (5, 5),
 (6, 6), (7, 7), (8, 8), (9, 9), (10, 10),
-(11, 11), (12, 12), (13, 13), (14, 14), (15, 15),
-(16, 16), (17, 17), (18, 18), (19, 19), (20, 20);
+(11, 1), (12, 2), (13, 3), (14, 4), (15, 5),
+(16, 6), (17, 7), (18, 8), (19, 9), (20, 10);
 
 INSERT INTO Exhibition_Artifacts (ExhibitionID, ArtifactID) VALUES
 (1, 2), (2, 4), (3, 6), (4, 8), (5, 10),
@@ -186,4 +186,5 @@ INSERT INTO Researcher_Exhibitions (ResearcherID, ExhibitionID) VALUES
 (6, 10), (7, 12), (8, 1), (9, 4), (10, 6),
 (11, 14), (12, 16), (13, 18), (14, 20), (15, 9),
 (16, 11), (17, 13), (18, 15), (19, 17), (20, 19);
+
 
