@@ -10,9 +10,7 @@ CREATE TABLE Artifacts (
     Period VARCHAR(100),
     Origin VARCHAR(255),
     InstitutionID INT,
-    CollectionID INT,
-    FOREIGN KEY (InstitutionID) REFERENCES Institutions(InstitutionID),
-    FOREIGN KEY (CollectionID) REFERENCES Collections(CollectionID)
+    CollectionID INT
 );
 
 -- Table: Historical_Texts
@@ -23,9 +21,7 @@ CREATE TABLE Historical_Texts (
     Year INT,
     Language VARCHAR(100),
     InstitutionID INT,
-    CollectionID INT,
-    FOREIGN KEY (InstitutionID) REFERENCES Institutions(InstitutionID),
-    FOREIGN KEY (CollectionID) REFERENCES Collections(CollectionID)
+    CollectionID INT
 );
 
 -- Table: Researchers
@@ -50,8 +46,7 @@ CREATE TABLE Exhibitions (
     Title VARCHAR(255) NOT NULL,
     StartDate DATE,
     EndDate DATE,
-    InstitutionID INT,
-    FOREIGN KEY (InstitutionID) REFERENCES Institutions(InstitutionID)
+    InstitutionID INT
 );
 
 -- Table: Public_Engagements
@@ -59,8 +54,7 @@ CREATE TABLE Public_Engagements (
     EngagementID INT PRIMARY KEY AUTO_INCREMENT,
     ExhibitionID INT,
     VisitorCount INT,
-    Feedback TEXT,
-    FOREIGN KEY (ExhibitionID) REFERENCES Exhibitions(ExhibitionID)
+    Feedback TEXT
 );
 
 -- Table: Collections
