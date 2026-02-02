@@ -1,0 +1,28 @@
+-- ==============================================
+-- สรุปความแตกต่าง: MySQL → Supabase (PostgreSQL)
+-- Summary of Changes for Course 2206385
+-- ==============================================
+
+-- ┌─────────────────────────┬──────────────────────────┬─────────────────────────────┐
+-- │ หัวข้อ                    │ MySQL (เดิม)               │ Supabase/PostgreSQL (ใหม่)    │
+-- ├─────────────────────────┼──────────────────────────┼─────────────────────────────┤
+-- │ สร้างฐานข้อมูล            │ CREATE DATABASE / USE     │ ไม่ต้อง (1 Project = 1 DB)     │
+-- │ ลบฐานข้อมูล              │ DROP DATABASE             │ ลบผ่าน Settings > Delete      │
+-- │ นับอัตโนมัติ               │ AUTO_INCREMENT            │ SERIAL                       │
+-- │ ค่าอัตโนมัติใน INSERT     │ Null                      │ DEFAULT                      │
+-- │ เปลี่ยนชนิดข้อมูล         │ MODIFY column TYPE        │ ALTER COLUMN col TYPE type   │
+-- │ เปลี่ยนชื่อคอลัมน์         │ CHANGE old new TYPE       │ RENAME COLUMN old TO new     │
+-- │ ข้อมูล Binary            │ BLOB                      │ BYTEA                        │
+-- │ ข้อมูล Boolean           │ TINYINT(1)                │ BOOLEAN (native)             │
+-- │ ENUM                    │ ENUM('a','b','c')         │ CHECK (col IN ('a','b','c')) │
+-- │ นำเข้าไฟล์               │ LOAD DATA INFILE          │ CSV Import ผ่าน Table Editor  │
+-- │ เครื่องมือจัดการ           │ phpMyAdmin                │ Supabase Studio (Web)        │
+-- │ Engine                  │ ENGINE=InnoDB              │ ไม่ต้องระบุ                    │
+-- │ Escape ชื่อตาราง/คอลัมน์   │ `backtick`                │ "double quote"               │
+-- └─────────────────────────┴──────────────────────────┴─────────────────────────────┘
+
+-- สิ่งที่เพิ่มเติมจากไฟล์เดิม:
+-- ✅ เพิ่ม FOREIGN KEY constraints (ไฟล์เดิมไม่มี)
+-- ✅ จัดลำดับ INSERT ให้ถูกต้องตาม Foreign Key (department ก่อน employee)
+-- ✅ แก้ typo "drop tabel" → "drop table"
+-- ✅ เพิ่มคำอธิบายภาษาไทยประกอบทุกคำสั่ง
